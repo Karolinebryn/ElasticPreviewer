@@ -1,20 +1,17 @@
-﻿function HomeViewModel(app, dataModel) {
+﻿function ElasticViewModel(app, dataModel) {
     var self = this;
 
-    self.myHometown = ko.observable("");
+    self.result = ko.observable("");
+
 
     Sammy(function () {
         this.get('#home', function () {
-            // Make a call to the protected Web API by passing in a Bearer Authorization Header
             $.ajax({
-                method: 'get',
-                url: app.dataModel.userInfoUrl,
+                method: 'post',
+                url: app.dataModel.elasticUrl,
                 contentType: "application/json; charset=utf-8",
-                headers: {
-                    'Authorization': 'Bearer ' + app.dataModel.getAccessToken()
-                },
                 success: function (data) {
-                    self.myHometown('Your Hometown is : ' + data.hometown);
+                    self.result( data.result);
                 }
             });
         });
@@ -25,7 +22,7 @@
 }
 
 app.addViewModel({
-    name: "Home",
+    name: "Elastic",
     bindingMemberName: "home",
-    factory: HomeViewModel
+    factory: ElasticViewModel
 });
