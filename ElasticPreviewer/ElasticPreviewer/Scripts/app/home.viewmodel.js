@@ -5,7 +5,7 @@
 
 
     Sammy(function () {
-        this.get('#home', function () {
+        this.get('#elastic', function () {
             $.ajax({
                 method: 'post',
                 url: app.dataModel.elasticUrl,
@@ -15,7 +15,7 @@
                 }
             });
         });
-        this.get('/', function () { this.app.runRoute('get', '#home') });
+        this.get('/', function () { this.app.runRoute('get', '#elastic') });
     });
 
     return self;
@@ -23,6 +23,6 @@
 
 app.addViewModel({
     name: "Elastic",
-    bindingMemberName: "home",
+    bindingMemberName: "elastic",
     factory: ElasticViewModel
 });
