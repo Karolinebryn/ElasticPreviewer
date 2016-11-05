@@ -10,19 +10,50 @@
         <p>Fill out the information about your Elasticsearch server and search query</p>
         @*<p data-bind="text: myHometown"></p>*@
 
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="input-serverurl" class="col-md-2">Server</label>
+                <div class="col-md-12">
+                    <input type="text" id="input-serverurl" class="form-control" style="min-width: 100%;" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="textarea-query" class="col-md-12">Query</label>
+                <div class="col-md-12">
+                    <textarea id="textarea-query" class="form-control" style="min-width: 100%; min-height: 400px;"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-default" value="Check" />
+                </div>
+            </div>
+        </form>
+
     </div>
 
     <div class="col-md-6">
         <h2>The result</h2>
         <p> The result of your query. </p>
 
-        <textarea data-bind="text: result"></textarea>
-    </div>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="textarea-result" class="col-md-12">Result</label>
+                <div class="col-md-12">
+                    <textarea id="textarea-result" data-bind="text: result" class="form-control" style="min-width: 100%; min-height: 475px;"></textarea>
+                </div>
+            </div>
+        </form>
 
+
+    </div>
+</div>
+
+<!-- /ko -->
+
+<div class="row">
     <div class="col-md-12">
         <h2>History</h2>
         <p>The searches you have previously made (only kept for this session, the data is not stored anywhere)</p>
     </div>
 </div>
-
-<!-- /ko -->
