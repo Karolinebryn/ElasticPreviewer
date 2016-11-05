@@ -260,6 +260,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="Scripts\app\elastic.viewmodel.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -301,7 +302,6 @@
     <Content Include="Scripts\app\app.datamodel.js" />
     <Content Include="Scripts\app\app.viewmodel.js" />
     <Content Include="Scripts\app\common.js" />
-    <Content Include="Scripts\app\home.viewmodel.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\_Home.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

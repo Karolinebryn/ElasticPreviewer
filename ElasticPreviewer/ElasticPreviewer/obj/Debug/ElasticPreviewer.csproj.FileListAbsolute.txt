@@ -87,4 +87,3 @@ C:\Projects\ElasticPreviewer\ElasticPreviewer\ElasticPreviewer\bin\System.Web.We
 C:\Projects\ElasticPreviewer\ElasticPreviewer\ElasticPreviewer\bin\System.Web.WebPages.Razor.xml
 C:\Projects\ElasticPreviewer\ElasticPreviewer\ElasticPreviewer\obj\Debug\ElasticPreviewer.dll
 C:\Projects\ElasticPreviewer\ElasticPreviewer\ElasticPreviewer\obj\Debug\ElasticPreviewer.pdb
-C:\Projects\ElasticPreviewer\ElasticPreviewer\ElasticPreviewer\obj\Debug\ElasticPreviewer.csprojResolveAssemblyReference.cache
