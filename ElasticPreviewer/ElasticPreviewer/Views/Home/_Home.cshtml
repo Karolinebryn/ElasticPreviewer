@@ -10,22 +10,22 @@
         <p>Fill out the information about your Elasticsearch server and search query</p>
         @*<p data-bind="text: myHometown"></p>*@
 
-        <form class="form-horizontal" role="form">
+        <form class="form-horizontal" role="form" data-bind="submit: doSearch">
             <div class="form-group">
                 <label for="input-serverurl" class="col-md-2">Server</label>
                 <div class="col-md-12">
-                    <input type="text" id="input-serverurl" class="form-control" style="min-width: 100%;" />
+                    <input data-bind="value: server" type="text" id="input-serverurl" class="form-control" style="min-width: 100%;" />
                 </div>
             </div>
             <div class="form-group">
                 <label for="textarea-query" class="col-md-12">Query</label>
                 <div class="col-md-12">
-                    <textarea id="textarea-query" class="form-control" style="min-width: 100%; min-height: 400px;"></textarea>
+                    <textarea data-bind="value: searchQuery" id="textarea-query" class="form-control" style="min-width: 100%; min-height: 400px;"></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-default" value="Check" />
+                    <input type="submit" class="btn btn-primary" value="Check" />
                 </div>
             </div>
         </form>

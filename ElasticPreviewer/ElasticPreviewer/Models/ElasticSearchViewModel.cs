@@ -8,6 +8,6 @@ namespace ElasticPreviewer.Models
     public class ElasticSearchViewModel
     {
         public string Server { get; set; }
-        public string SearchTemplate { get; set; }
+        public string SearchQuery { get; set; }
     }
 }
